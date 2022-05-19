@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body style="background-image: linear-gradient(180deg,#A9A9A9,#A9A9A9);">
+  <div class="container mt-3">
+    <div class="mb-3" style="display: flex">
+      <h1><a style="color: black; text-decoration: none;"  href="Index.html">←</a></h1>
+      <h1>Formulário</h1>
+
+
+
+    </div>
+
+    <form method="post">
+      <fieldset>
+
+        <legend>Dados Pessoais</legend>
+
+        <div class="mb-3 mt-3">
+          <label for="nome">Nome</label>
+          <input class="form-control" name="nome" id="nome" type="text">
+        </div>
+
+        <div class="mb-3">
+          <label for="datanasc">Data de Nascimento</label>
+          <input type="date" class="form-control" name="datanasc" id="datanasc" placeholder="dd / mm / aaaa">
+        </div>
+
+        <div class="mb-3">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" name="email" id="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="telefone">Telefone</label>
+          <input type="tel" class="form-control" name="telefone" id="telefone">
+        </div>
+
+        <legend>Dados Acadêmicos</legend>
+
+        <div class="mb-3">
+          <label for="curso">Curso</label>
+          <select class="form-select" name="curso" id="curso">
+            <option value="1">ADS</option>
+            <option value="2">GTI</option>
+            <option value="3">TBD</option>
+            <option value="4">TSI</option>
+          </select>
+        </div>
+        <label for="semestre">Semestre:</label>
+        <div class="form-check">
+
+          <input type="radio" class="form-check-input" id="semestre1" name="semestre" value="option1" checked>
+          <label class="form-check-label" for="semestre1">1º</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="semestre2" name="semestre" value="option2">
+          <label class="form-check-label" for="semestre2">2º</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="semestre3" name="semestre" value="option3">
+          <label class="form-check-label" for="semestre3">3º</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="semestre4" name="semestre" value="option4">
+          <label class="form-check-label" for="semestre4">4º</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="radio" class="form-check-input" id="semestre5" name="semestre" value="option5">
+          <label class="form-check-label" for="semestre5">5º</label>
+        </div>
+
+        <div class="mb-3">
+          <label for="trabalho">Trabalha?</label>
+          <input type="checkbox" class="form-check-input" name="trabalho" id="trabalho">
+        </div>
+
+        <div class="mb-3">
+          <label for="local">Local de Trabalho</label>
+          <input class="form-control" type="text" name="local" id="local">
+        </div>
+
+        <div class="mb-3">
+          <label for="experiencia">Descreva sua experiência</label><br>
+          <textarea name="experiencia" class="form-control" id="experiencia"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Gravar</button>
+          <button type="reset" class="btn btn-info">Limpar</button>
+    </form>
+  </div>
+
+  </div>
+</body>
+
+</html>
